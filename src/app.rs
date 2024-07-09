@@ -6,6 +6,11 @@ pub fn App() -> impl IntoView {
 
     
     view! {
+    <button>
+        // text nodes are wrapped in quotation marks
+        "Click me: "
+    </button>
+
           // <MapContainer center=Position::new(51.505, -0.09) zoom=13.0 set_view=true>
           // <MapContainer style="height: 400px" center=Position::new(51.505, -0.09) zoom=13.0 set_view=true>
           <MapContainer style="height: 98vh" center=Position::new(51.505, -0.09) zoom=13.0 set_view=true>
