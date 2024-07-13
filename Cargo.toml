@@ -8,7 +8,9 @@ edition = "2021"
 [dependencies]
 console_error_panic_hook = "0.1"
 
-leptos = { version = "0.6.12", features = ["csr", "nightly"] }
+leptos = { version = "0.6", features = ["csr"] }
+# leptos = { version = "0.6.12", features = ["csr", "nightly"] }
+
 leptos-leaflet = { version = "0.8", default-features = false, features = [
     "csr",
 ] }
