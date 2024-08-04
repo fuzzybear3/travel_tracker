@@ -1,0 +1,107 @@
+[coordinates."San Fransisco"]
+latitude = "-0.9538938"
+longitude = "-78.6046132"
+
+[coordinates.Athens]
+latitude = "33.9597677"
+longitude = "-83.376398"
+
+[coordinates.Kalabaka]
+latitude = "39.7070178"
+longitude = "21.6279431"
+
+[coordinates.Corfu]
+latitude = "42.9600595"
+longitude = "-78.4055767"
+
+[coordinates.Catania]
+latitude = "37.5023612"
+longitude = "15.0873718"
+
+[coordinates.Naples]
+latitude = "40.8358846"
+longitude = "14.2487679"
+
+[coordinates.Pisa]
+latitude = "43.4714722"
+longitude = "10.679791173704576"
+
+[coordinates.Marseille]
+latitude = "43.2961743"
+longitude = "5.3699525"
+
+[coordinates.Barcelona]
+latitude = "41.3828939"
+longitude = "2.1774322"
+
+[coordinates.Porto]
+latitude = "41.1494512"
+longitude = "-8.6107884"
+
+[coordinates.Lisbon]
+latitude = "38.7077507"
+longitude = "-9.1365919"
+
+[coordinates.Lagos]
+latitude = "6.4550575"
+longitude = "3.3941795"
+
+[coordinates.Sagres]
+latitude = "-21.8840628"
+longitude = "-50.9574608"
+
+[coordinates.Albufeira]
+latitude = "37.088241"
+longitude = "-8.2526339"
+
+[coordinates.Faro]
+latitude = "37.0162727"
+longitude = "-7.9351771"
+
+[coordinates.Marrakesh]
+latitude = "31.6258257"
+longitude = "-7.9891608"
+
+[coordinates.Taghazout]
+latitude = "30.544722"
+longitude = "-9.709128"
+
+[coordinates.Merzouga]
+latitude = "31.0999166"
+longitude = "-4.0140878"
+
+[coordinates.London]
+latitude = "51.4893335"
+longitude = "-0.14405508452768728"
+
+[coordinates.Amsterdam]
+latitude = "52.3730796"
+longitude = "4.8924534"
+
+[coordinates.Hamburg]
+latitude = "53.550341"
+longitude = "10.000654"
+
+[coordinates.Copenhagen]
+latitude = "55.6867243"
+longitude = "12.5700724"
+
+[coordinates.Berlin]
+latitude = "52.5108638"
+longitude = "13.3989421"
+
+[coordinates.Munich]
+latitude = "48.1371079"
+longitude = "11.5753822"
+
+[coordinates.Vienna]
+latitude = "48.2083537"
+longitude = "16.3725042"
+
+[coordinates.Prague]
+latitude = "50.0874654"
+longitude = "14.4212535"
+
+[coordinates.Budapest]
+latitude = "47.48138955"
+longitude = "19.14609412691246"
