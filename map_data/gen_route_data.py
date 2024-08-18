@@ -6,8 +6,9 @@ import logging
 # Configure logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def get_geocode(city):
-    url = f'https://nominatim.openstreetmap.org/search?format=json&q="{city}"'
+def get_geocode(city, country):
+    url = f'https://nominatim.openstreetmap.org/search?format=json&q="{city},{country}"'
+
     # url = f'https://nominatim.openstreetmap.org/search?q={city}&format=json&limit=1'
     # headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
     # headers ={ 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0'}
