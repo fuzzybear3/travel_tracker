@@ -1,34 +1,115 @@
+[[cities]]
+city = "San Francisco"
+country = "USA"
 
-# cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"]
-cities = [
-  "San Francisco",
-  "Athens",
-  "Kalabaka",
-  "Corfu",
-  "Catania",
-  "Naples",
-  "Pisa",
-  "Marseille",
-  "Barcelona",
-  "Porto",
-  "Lisbon",
-  "Lagos",
-  "Sagres",
-  "Albufeira",
-  "Faro",
-  "Marrakesh",
-  "Taghazout",
-  "Merzouga",
-  "Marrakesh",
-  "London",
-  "Amsterdam",
-  "Hamburg",
-  "Copenhagen",
-  "Berlin",
-  "Munich",
-  "Vienna",
-  "Prague",
-  "Vienna",
-  "Budapest",
-  # "krakow",
-]
+[[cities]]
+city = "Athens"
+country = "Greece"
+
+[[cities]]
+city = "Kalabaka"
+country = "Greece"
+
+[[cities]]
+city = "Corfu"
+country = "Greece"
+
+[[cities]]
+city = "Catania"
+country = "Italy"
+
+[[cities]]
+city = "Naples"
+country = "Italy"
+
+[[cities]]
+city = "Pisa"
+country = "Italy"
+
+[[cities]]
+city = "Marseille"
+country = "France"
+
+[[cities]]
+city = "Barcelona"
+country = "Spain"
+
+[[cities]]
+city = "Porto"
+country = "Portugal"
+
+[[cities]]
+city = "Lisbon"
+country = "Portugal"
+
+[[cities]]
+city = "Lagos"
+country = "Portugal"
+
+[[cities]]
+city = "Sagres"
+country = "Portugal"
+
+[[cities]]
+city = "Albufeira"
+country = "Portugal"
+
+[[cities]]
+city = "Faro"
+country = "Portugal"
+
+[[cities]]
+city = "Marrakesh"
+country = "Morocco"
+
+[[cities]]
+city = "Taghazout"
+country = "Morocco"
+
+[[cities]]
+city = "Merzouga"
+country = "Morocco"
+
+[[cities]]
+city = "Marrakesh"
+country = "Morocco" # Duplicated entry
+
+[[cities]]
+city = "London"
+country = "United Kingdom"
+
+[[cities]]
+city = "Amsterdam"
+country = "Netherlands"
+
+[[cities]]
+city = "Hamburg"
+country = "Germany"
+
+[[cities]]
+city = "Copenhagen"
+country = "Denmark"
+
+[[cities]]
+city = "Berlin"
+country = "Germany"
+
+[[cities]]
+city = "Munich"
+country = "Germany"
+
+[[cities]]
+city = "Vienna"
+country = "Austria"
+
+[[cities]]
+city = "Prague"
+country = "Czech Republic"
+
+[[cities]]
+city = "Vienna"
+country = "Austria" # Duplicated entry
+
+[[cities]]
+city = "Budapest"
+country = "Hungary"

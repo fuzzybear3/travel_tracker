@@ -40,7 +40,11 @@ def get_geocode(city, country):
     logging.info(data)
     if data:
         logging.info(f"Geocode for {city}: {data[0]['lat']}, {data[0]['lon']}")
-        return {'latitude': data[0]['lat'], 'longitude': data[0]['lon']}
+        return {
+            'city': city,
+            'latitude': float(data[0]['lat']),
+            'longitude': float(data[0]['lon'])
+        }
     else:
         logging.warning(f"Geocode not found for {city}")
         return None
@@ -66,17 +70,21 @@ def main(logging_level=logging.INFO):
     logging.info(f"{cities}")
     logging.info("steven")
     # print(vars(logging))
-    coordinates = {}
+    coordinates = []
     
     # test = get_geocode(cities[0])
-    # logging.info(test)
+    # logging.info(tes)
 
-    for city in cities:
-        geo_data = get_geocode(city)
+    for place in cities:
+        city = place["city"]
+        country = place["country"]
+        print(city)
+        geo_data = get_geocode(city, country)
         if geo_data:
-            coordinates[city] = geo_data
+            coordinates.append(geo_data)
         else:
-            coordinates[city] = {'error': 'Geocode not found'}
+            print("error: could not find Geocode")
+            # coordinates[city] = {'error': 'Geocode not found'}
 
     write_coordinates(output_file, coordinates)
 
