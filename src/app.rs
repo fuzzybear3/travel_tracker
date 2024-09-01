@@ -53,11 +53,11 @@ fn ProgressBar(
     }
 }
 
-struct Location {
-    // name: String,
-    latitude: f64,
-    longitude: f64,
-}
+// struct Location {
+//     // name: String,
+//     latitude: f64,
+//     longitude: f64,
+// }
 
 #[component]
 pub fn App() -> impl IntoView {
@@ -68,7 +68,6 @@ pub fn App() -> impl IntoView {
     }
 
     let mut my_positions: Vec<Position> = Vec::new();
-
     for location in MAP_DATA.coordinates.iter() {
         let pos = Position {
             lat: location.latitude,
@@ -76,6 +75,8 @@ pub fn App() -> impl IntoView {
         };
         my_positions.push(pos);
     }
+
+    let center = average_center(&my_positions);
 
     view! {
         <NavBar/>
@@ -92,8 +93,9 @@ pub fn App() -> impl IntoView {
         // <MapContainer style="height: 400px" center=Position::new(51.505, -0.09) zoom=13.0 set_view=true>
         <MapContainer
             style="height: 98vh"
-            center=Position::new(51.505, -0.09)
-            zoom=13.0
+            // center=Position::new(51.505, -0.09)
+            center
+            zoom=3.0
             set_view=true
         >
             <TileLayer
@@ -106,5 +108,20 @@ pub fn App() -> impl IntoView {
                 weight=8.0
             />
         </MapContainer>
+    }
+}
+
+fn average_center(locations: &[Position]) -> Position {
+    let sum = locations
+        .iter()
+        .fold(Position { lat: 0.0, lng: 0.0 }, |acc, loc| Position {
+            lat: acc.lat + loc.lat,
+            lng: acc.lng + loc.lng,
+        });
+
+    let count = locations.len() as f64;
+    Position {
+        lat: sum.lat / count,
+        lng: sum.lng / count,
     }
 }
