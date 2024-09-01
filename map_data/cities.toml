@@ -113,3 +113,44 @@ country = "Austria" # Duplicated entry
 [[cities]]
 city = "Budapest"
 country = "Hungary"
+
+[[cities]]
+city = "Krakow"
+country = "Poland"
+
+[[cities]]
+city = "Warsaw"
+country = "Poland"
+
+[[cities]]
+city = "Bangkok"
+country = "Thailand"
+
+[[cities]]
+city = "phuket"
+country = "Thailand"
+
+[[cities]]
+city = "ko phi phi don"
+country = "Thailand"
+
+# krabi
+[[cities]]
+city = "กระบี่"
+country = "Thailand"
+
+[[cities]]
+city = "ko phangan"
+country = "Thailand"
+
+[[cities]]
+city = "ko tao"
+country = "Thailand"
+
+[[cities]]
+city = "ko samui"
+country = "Thailand"
+
+[[cities]]
+city = "Chiang mai"
+country = "Thailand"

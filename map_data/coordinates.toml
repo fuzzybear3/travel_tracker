@@ -1,8 +1,8 @@
-# [[coordinates]]
-# city = "San Francisco"
-# latitude = 37.7792588
-# longitude = -122.4193286
-#
+[[coordinates]]
+city = "San Francisco"
+latitude = 37.7792588
+longitude = -122.4193286
+
 [[coordinates]]
 city = "Athens"
 latitude = 37.9755648
@@ -115,8 +115,8 @@ longitude = 12.5700724
 
 [[coordinates]]
 city = "Berlin"
-latitude = 52.5108638
-longitude = 13.3989421
+latitude = 52.510885
+longitude = 13.3989367
 
 [[coordinates]]
 city = "Munich"
@@ -142,3 +142,54 @@ longitude = 16.3725042
 city = "Budapest"
 latitude = 47.4978789
 longitude = 19.0402383
+
+[[coordinates]]
+city = "Krakow"
+latitude = 50.0469432
+longitude = 19.997153435836697
+
+[[coordinates]]
+city = "Warsaw"
+latitude = 52.2337172
+longitude = 21.071432235636493
+
+[[coordinates]]
+city = "Bangkok"
+latitude = 13.7524938
+longitude = 100.4935089
+
+[[coordinates]]
+city = "phuket"
+latitude = 7.9366015
+longitude = 98.3529292
+
+[[coordinates]]
+city = "ko phi phi don"
+latitude = 7.7522403
+longitude = 98.77664336667435
+
+[[coordinates]]
+city = "กระบี่"
+latitude = 8.0634637
+longitude = 98.9162345
+
+[[coordinates]]
+city = "ko phangan"
+latitude = 9.734950300000001
+longitude = 100.0305710845208
+
+[[coordinates]]
+city = "ko tao"
+latitude = 10.0921822
+longitude = 99.83953617562148
+
+[[coordinates]]
+city = "ko samui"
+latitude = 9.5071545
+longitude = 99.9957562
+
+[[coordinates]]
+city = "Chiang mai"
+latitude = 18.7882778
+longitude = 98.9858802
+
