@@ -63,20 +63,9 @@ struct Location {
 pub fn App() -> impl IntoView {
     let (count, set_count) = create_signal(0);
 
-    // let locations: Vec<Location> = vec![
-    //     Location {
-    //         name: "San Francisco",
-    //         latitude: 37.7792588,
-    //         longitude: -122.4193286,
-    //     },
-
     static_toml::static_toml! {
         static MAP_DATA = include_toml!("map_data/coordinates.toml");
     }
-
-    // let _ = &MAP_DATA.coordinates.iter();
-
-    for place in MAP_DATA.coordinates.iter() {}
 
     let mut my_positions: Vec<Position> = Vec::new();
 
@@ -86,10 +75,8 @@ pub fn App() -> impl IntoView {
             lng: location.longitude,
         };
         my_positions.push(pos);
-        // location.name, location.latitude, location.longitude
     }
 
-    let double_count = move || count() * 2;
     view! {
         <NavBar/>
 
@@ -100,29 +87,6 @@ pub fn App() -> impl IntoView {
             "Click me"
         </button>
         <br/>
-        // If you have this open in CodeSandbox or an editor with
-        // rust-analyzer support, try hovering over `ProgressBar`,
-        // `max`, or `progress` to see the docs we defined above
-        // <ProgressBar max=50 progress=count/>
-        // Let's use the default max value on this one
-        // the default is 100, so it should move half as fast
-        // <ProgressBar progress=count/>
-        // Signal::derive creates a Signal wrapper from our derived signal
-        // using double_count means it should move twice as fast
-        // <ProgressBar max=50 progress=Signal::derive(double_count)/>
-
-        // <button>
-        // // text nodes are wrapped in quotation marks
-        // "Click me: "
-        // </button>
-
-        // Read map data
-        // test
-        //
-        // {locations[0].name}
-        // {MAP_DATA[0].name}
-        // {locations.last().unwrap().name}
-        // {format!("{:?}", my_positions)}
 
         // <MapContainer center=Position::new(51.505, -0.09) zoom=13.0 set_view=true>
         // <MapContainer style="height: 400px" center=Position::new(51.505, -0.09) zoom=13.0 set_view=true>
@@ -144,13 +108,3 @@ pub fn App() -> impl IntoView {
         </MapContainer>
     }
 }
-
-// fn read_map_data() {
-//     let toml_content = fs::read_to_string("coordinates.toml").expect("couldn't open file");
-//
-//     // Parse the string into the Config struct
-//     let config: Config = toml::from_str(&toml_content).expect("can't parse toml string");
-//
-//     // Print the parsed data
-//     println!("{:?}", config);
-// }
