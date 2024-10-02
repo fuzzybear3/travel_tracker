@@ -1,6 +1,6 @@
-[[cities]]
-city = "San Francisco"
-country = "USA"
+# [[cities]]
+# city = "San Francisco"
+# country = "USA"
 
 [[cities]]
 city = "Athens"
@@ -154,3 +154,27 @@ country = "Thailand"
 [[cities]]
 city = "Chiang mai"
 country = "Thailand"
+
+[[cities]]
+city = "Ho Chi Minh City"
+country = "Vietnam"
+
+[[cities]]
+city = "Bao Loc"
+country = "Vietnam"
+
+[[cities]]
+city = "Dalat"
+country = "Vietnam"
+
+[[cities]]
+city = "Nha Trang"
+country = "Vietnam"
+
+[[cities]]
+city = "Da Nang"
+country = "Vietnam"
+
+[[cities]]
+city = "Phong Nha"
+country = "Vietnam"
