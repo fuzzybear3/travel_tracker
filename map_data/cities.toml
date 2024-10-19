@@ -178,3 +178,19 @@ country = "Vietnam"
 [[cities]]
 city = "Phong Nha"
 country = "Vietnam"
+
+[[cities]]
+city = "vinh"
+country = "Vietnam"
+
+[[cities]]
+city = "mai chau"
+country = "Vietnam"
+
+[[cities]]
+city = "Hanoi"
+country = "Vietnam"
+
+[[cities]]
+city = "taipei"
+country = "taiwan"

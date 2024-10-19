@@ -125,8 +125,8 @@ longitude = 16.3725042
 
 [[coordinates]]
 city = "Prague"
-latitude = 50.0596288
-longitude = 14.446459273258009
+latitude = 50.0874654
+longitude = 14.4212535
 
 [[coordinates]]
 city = "Vienna"
@@ -145,8 +145,8 @@ longitude = 19.997153435836697
 
 [[coordinates]]
 city = "Warsaw"
-latitude = 52.2337172
-longitude = 21.071432235636493
+latitude = 52.2319581
+longitude = 21.0067249
 
 [[coordinates]]
 city = "Bangkok"
@@ -180,8 +180,8 @@ longitude = 99.83953617562148
 
 [[coordinates]]
 city = "ko samui"
-latitude = 9.5071545
-longitude = 99.9957562
+latitude = 9.50139445
+longitude = 99.99561927320003
 
 [[coordinates]]
 city = "Chiang mai"
@@ -217,4 +217,24 @@ longitude = 108.212
 city = "Phong Nha"
 latitude = 17.6069708
 longitude = 106.3026134
+
+[[coordinates]]
+city = "vinh"
+latitude = 18.6698528
+longitude = 105.6840371
+
+[[coordinates]]
+city = "mai chau"
+latitude = 20.71587505
+longitude = 104.97912930663392
+
+[[coordinates]]
+city = "Hanoi"
+latitude = 21.0283334
+longitude = 105.854041
+
+[[coordinates]]
+city = "taipei"
+latitude = 25.0375198
+longitude = 121.5636796
 
