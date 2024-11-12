@@ -1,13 +1,14 @@
 import requests
 import toml
 import logging
-
+import time
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def get_geocode(city, country):
-    url = f'https://nominatim.openstreetmap.org/search?format=json&q="{city},{country}"'
+            # https://nominatim.openstreetmap.org/search?format=json&q=Kaohsiung,Taiwan&accept-language=en
+    url = f'https://nominatim.openstreetmap.org/search?format=json&q="{city},{country}"&accept-language=en'
 
     # url = f'https://nominatim.openstreetmap.org/search?q={city}&format=json&limit=1'
     # headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
@@ -28,13 +29,17 @@ def get_geocode(city, country):
     #     'Upgrade-Insecure-Requests': '1',
     #     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0'
     # }
+ #    headers = { 'User-Agent':
+	# 'Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0',
+	# 'From': 'stevenrguido@gmail.com'}
+
     headers = { 'User-Agent':
-	'Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0',
-	'From': 'stevenrguido@gmail.com'}
+	'travel-tracker/1.0 (stevenrguido@gmail.com)',
+	'From': 'stevenrguido@gmail.com',
+	'Referer': 'https://stevenguido.com/'}
 
-
-    # response = requests.get(url, headers=headers)
-    response = requests.get(url)
+    response = requests.get(url, headers=headers)
+    # response = requests.get(url)
     logging.info(response)
     data = response.json()
     logging.info(data)
@@ -58,6 +63,11 @@ def write_coordinates(file_path, coordinates):
     with open(file_path, 'w') as file:
         toml.dump({'coordinates': coordinates}, file)
 
+def get_cached_coordinates(file_path):
+    with open(file_path, 'r') as file:
+        data = toml.load(file)
+        return data['coordinates']
+
 
 def main(logging_level=logging.INFO):
     input_file = 'cities.toml'
@@ -69,23 +79,31 @@ def main(logging_level=logging.INFO):
     cities = read_cities(input_file)
     logging.info(f"{cities}")
     logging.info("steven")
-    # print(vars(logging))
     coordinates = []
-    
-    # test = get_geocode(cities[0])
-    # logging.info(tes)
+   
+    cached_coordinates = get_cached_coordinates(output_file)
+    # for place in cities:
+    #     if place["city"]
+    len_cached_coordinates = len(cached_coordinates)
+    logging.info(f"There are {len_cached_coordinates} cached coordinates")
 
-    for place in cities:
+    for i, place in enumerate(cities):
+        city = place["city"]
+        if i < len_cached_coordinates and cached_coordinates[i]["city"] == city:
+            print(f"{city} is cached; skipping..")
+            continue
         city = place["city"]
         country = place["country"]
         print(city)
-        geo_data = get_geocode(city, country)
+        geo_data  = get_geocode(city, country)
         if geo_data:
             coordinates.append(geo_data)
         else:
             print("error: could not find Geocode")
-            # coordinates[city] = {'error': 'Geocode not found'}
+        time.sleep(1)
 
+
+    coordinates = cached_coordinates + coordinates
     write_coordinates(output_file, coordinates)
 
 if __name__ == "__main__":

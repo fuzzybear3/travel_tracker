@@ -194,3 +194,43 @@ country = "Vietnam"
 [[cities]]
 city = "taipei"
 country = "taiwan"
+
+[[cities]]
+city = "Taoyuan"
+country = "taiwan"
+
+[[cities]]
+city = "Hsinchu"
+country = "taiwan"
+
+[[cities]]
+city = "Taichung"
+country = "taiwan"
+
+[[cities]]
+city = "Chayi"
+country = "taiwan"
+
+[[cities]]
+city = "Kaohsiung"
+country = "taiwan"
+
+[[cities]]
+city = "Checheng"
+country = "taiwan"
+
+[[cities]]
+city = "Taitung"
+country = "taiwan"
+
+[[cities]]
+city = "taipei"
+country = "taiwan"
+
+[[cities]]
+city = "Seoul"
+country = "Korea"
+
+[[cities]]
+city = "Fukuoka"
+country = "japan"

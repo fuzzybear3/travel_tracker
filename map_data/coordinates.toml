@@ -140,13 +140,13 @@ longitude = 19.14609412691246
 
 [[coordinates]]
 city = "Krakow"
-latitude = 50.0469432
-longitude = 19.997153435836697
+latitude = 50.0619474
+longitude = 19.9368564
 
 [[coordinates]]
 city = "Warsaw"
-latitude = 52.2319581
-longitude = 21.0067249
+latitude = 52.2337172
+longitude = 21.071432235636493
 
 [[coordinates]]
 city = "Bangkok"
@@ -180,8 +180,8 @@ longitude = 99.83953617562148
 
 [[coordinates]]
 city = "ko samui"
-latitude = 9.50139445
-longitude = 99.99561927320003
+latitude = 9.5071545
+longitude = 99.9957562
 
 [[coordinates]]
 city = "Chiang mai"
@@ -237,4 +237,54 @@ longitude = 105.854041
 city = "taipei"
 latitude = 25.0375198
 longitude = 121.5636796
+
+[[coordinates]]
+city = "Taoyuan"
+latitude = 24.9929995
+longitude = 121.3010003
+
+[[coordinates]]
+city = "Hsinchu"
+latitude = 24.8066333
+longitude = 120.9686833
+
+[[coordinates]]
+city = "Taichung"
+latitude = 24.163162
+longitude = 120.6478282
+
+[[coordinates]]
+city = "Chayi"
+latitude = 23.4592368
+longitude = 120.3237915
+
+[[coordinates]]
+city = "Kaohsiung"
+latitude = 22.6203348
+longitude = 120.3120375
+
+[[coordinates]]
+city = "Checheng"
+latitude = 22.0739455
+longitude = 120.714193
+
+[[coordinates]]
+city = "Taitung"
+latitude = 22.7553667
+longitude = 121.1506
+
+[[coordinates]]
+city = "taipei"
+latitude = 25.0375198
+longitude = 121.5636796
+
+[[coordinates]]
+city = "Seoul"
+latitude = 37.5666791
+longitude = 126.9782914
+
+[[coordinates]]
+city = "Fukuoka"
+latitude = 33.6251241
+longitude = 130.6180016
 
