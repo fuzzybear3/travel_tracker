@@ -104,9 +104,17 @@ pub fn App() -> impl IntoView {
             />
             <Polyline
                 // positions=positions(&[(51.505, -0.09), (51.51, -0.1), (51.51, -0.12)])
-                positions=my_positions
+                positions=my_positions.clone()
                 weight=8.0
             />
+            <Marker position=position!(51.505, - 0.09) title="test_iseanosrientao"/>
+            {my_positions
+                .into_iter()
+                .map(|position| {
+                    view! { <Marker position=position/> }
+                })
+                .collect::<Vec<_>>()}
+
         </MapContainer>
     }
 }
