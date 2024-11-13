@@ -80,18 +80,31 @@ def main(logging_level=logging.INFO):
     logging.info(f"{cities}")
     logging.info("steven")
     coordinates = []
-   
+
     cached_coordinates = get_cached_coordinates(output_file)
-    # for place in cities:
-    #     if place["city"]
     len_cached_coordinates = len(cached_coordinates)
     logging.info(f"There are {len_cached_coordinates} cached coordinates")
 
-    for i, place in enumerate(cities):
-        city = place["city"]
-        if i < len_cached_coordinates and cached_coordinates[i]["city"] == city:
-            print(f"{city} is cached; skipping..")
-            continue
+    # find the first place where the cache is out of date.
+    correct_cached_places = []
+
+    for i in range(len(cached_coordinates)):
+        listed_place = cities[i]["city"]
+        potenial_cached_place = cached_coordinates[i]["city"]
+        logging.debug(f"comparing {listed_place} and {potenial_cached_place}")
+        
+        if listed_place == potenial_cached_place:
+            print(f"{listed_place} is cached; skipping..")
+            correct_cached_places.append(cached_coordinates[i])
+        else:
+            logging.warning(f"cache not found for {listed_place}. regetting the rest of the list")
+            break
+
+
+    missing_places = cities[len(correct_cached_places):]
+
+    for i, place in enumerate(missing_places):
+        
         city = place["city"]
         country = place["country"]
         print(city)
@@ -103,9 +116,9 @@ def main(logging_level=logging.INFO):
         time.sleep(1)
 
 
-    coordinates = cached_coordinates + coordinates
+    coordinates = correct_cached_places + coordinates
     write_coordinates(output_file, coordinates)
 
 if __name__ == "__main__":
-    main(logging_level=logging.DEBUG)
+    main(logging_level=logging.WARNING)
 
