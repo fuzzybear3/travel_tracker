@@ -234,3 +234,23 @@ country = "Korea"
 [[cities]]
 city = "Fukuoka"
 country = "japan"
+
+[[cities]]
+city = "Hiroshima"
+country = "japan"
+
+[[cities]]
+city = "Himeji"
+country = "japan"
+
+[[cities]]
+city = "Osaka"
+country = "japan"
+
+[[cities]]
+city = "Kobe"
+country = "japan"
+
+[[cities]]
+city = "Nagoya"
+country = "japan"

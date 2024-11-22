@@ -288,3 +288,28 @@ city = "Fukuoka"
 latitude = 33.6251241
 longitude = 130.6180016
 
+[[coordinates]]
+city = "Hiroshima"
+latitude = 34.3917241
+longitude = 132.4517589
+
+[[coordinates]]
+city = "Himeji"
+latitude = 34.8153529
+longitude = 134.6854793
+
+[[coordinates]]
+city = "Osaka"
+latitude = 34.6937569
+longitude = 135.5014539
+
+[[coordinates]]
+city = "Kobe"
+latitude = 34.6932379
+longitude = 135.1943764
+
+[[coordinates]]
+city = "Nagoya"
+latitude = 35.1851045
+longitude = 136.8998438
+
