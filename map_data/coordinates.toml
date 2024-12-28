@@ -313,3 +313,43 @@ city = "Nagoya"
 latitude = 35.1851045
 longitude = 136.8998438
 
+[[coordinates]]
+city = "heda junction"
+latitude = 34.972928
+longitude = 138.7774418
+
+[[coordinates]]
+city = "Numazu"
+latitude = 35.0957963
+longitude = 138.8633946
+
+[[coordinates]]
+city = "Fujikawaguchiko"
+latitude = 35.5010653
+longitude = 138.7653041
+
+[[coordinates]]
+city = "Tokyo"
+latitude = 35.6768601
+longitude = 139.7638947
+
+[[coordinates]]
+city = "Nagano"
+latitude = 36.1143945
+longitude = 138.0319015
+
+[[coordinates]]
+city = "hakuba"
+latitude = 36.6981042
+longitude = 137.862068
+
+[[coordinates]]
+city = "tokyo"
+latitude = 35.6768601
+longitude = 139.7638947
+
+[[coordinates]]
+city = "Sakura"
+latitude = 35.7234619
+longitude = 140.2240158
+
